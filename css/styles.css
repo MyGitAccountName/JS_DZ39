@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'president-cyr';
+    src: url('../fonts/president-cyr.ttf') format('truetype');
+}
+
+.complete {
+    color: red;
+}
+
+#page {
+    display: flex;
+    position: relative;
+    font-size: 32px;
+    font-family: "president-cyr", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 150px;
+    background-image: url("../images/блокнот1.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    min-height: 880px;
+}
+
+.hand {
+    position: absolute;
+    bottom: 170px;
+    left: calc(50% - 508px);
+}
+
+#hand2 {
+    display: none;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 20px 0 10px;
+    width: 490px;
+    font-size: 32px;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+#ul>li {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    align-items: center;
+    border-bottom: 2px solid darkblue;
+}
+
+#ul>li>p {
+    margin: 0 auto 0 0;
+    max-width: 400px;
+}
+
+.item {
+    word-wrap: break-word;
+}
+
+.item:focus {
+    background-color: blanchedalmond;
+    border: 1px solid red;
+}
+
+.date {
+    font-size: 15px;
+    margin-left: 5px;
+    color: darkblue;
+}
+
+.edit, .del {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#newItemButton, #newItemForm {
+    position: absolute;
+    top: 90%;
+}
+
+#showForm {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#itemDescription, #add {
+    font-family: "president-cyr", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
